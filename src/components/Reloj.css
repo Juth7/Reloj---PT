@@ -1,3 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: Courier, monospace;
+  background-repeat: no-repeat;
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(8,140,161,1) 0%, rgba(2,0,36,1) 70%);
+}
 h1{
   font-size:1.5em;
   color: rgb(255, 255, 255);
@@ -11,9 +26,22 @@ h1{
 			         0px 0px 75px rgb(51, 24, 255)
 }
 
-body {
-  font-family: Courier, monospace;
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(8,140,161,1) 0%, rgba(2,0,36,1) 70%);
+.btn {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-top: 4rem;
+  background: linear-gradient(
+    180deg,
+    rgba(124, 159, 241, 0.32) 18.57%,
+    rgba(107, 89, 25, 0.103) 100%
+  );
+  border-color: rgba(34, 38, 151, 0.589);
+  box-shadow: 0px 0px 20px 4px rgba(59, 20, 95, 0.5);
+  border-radius: 20px;
+  color: rgba(255, 235, 205, 0.616);
+  width: fit-content;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
 }
 

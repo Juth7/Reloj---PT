@@ -20,7 +20,7 @@ class Reloj extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="container">
           <h1>Hora actual</h1>
           <div className="card">
             <h1>{this.state.time}</h1>

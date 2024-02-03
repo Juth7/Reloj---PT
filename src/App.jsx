@@ -1,11 +1,16 @@
-import { Component } from "react";
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import { Formulario } from "./components/Formulario";
 import Reloj from "./components/Reloj";
 
-class App extends Component {
-  render() {
-    return <Reloj />;
-  }
-}
+const App = () => {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Reloj />} />
+        <Route path="/formulario" element={<Formulario />} />
+      </Routes>
+    </>
+  );
+};
 
 export default App;
